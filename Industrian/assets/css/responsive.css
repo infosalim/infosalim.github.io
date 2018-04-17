@@ -1,0 +1,156 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+    
+    .header-top-area{
+        font-size: 13px;
+    }
+    .single-slide-item h2{
+        font-size: 50px;
+    }
+
+}
+
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    
+    
+    
+    
+   .header-top-area, .text-right, .logo, .mainmenu-area ul,.industrian-cta-area, .text-right,.single-slide-item, .padding-left-30{
+        text-align: center;
+    }
+    .mainmenu-area ul li a{
+        padding: 10px 20px;
+        
+    }
+    .single-slide-item{
+        font-size: 17px;
+    }
+    .single-slide-item h2{
+        font-size: 40px;
+    }
+    .mainmenu-area li ul{
+        top: 80px;
+    }
+    .mainmenu-area li:hover ul{
+        top: 48px;
+    }
+    .single-small-service-item h4{
+        font-size: 16px;
+    }
+    .industrian-content-block{
+        padding: 35px 0;
+    }
+    .industrian-cta-area .cta- btn{
+        margin-top: 15px;
+    }
+    .who-we-are-text{
+        padding: 20px 0; 
+    }
+    .padding-left-30{
+        margin-top: 30px;
+    }
+    .footer-wid{
+        padding-bottom: 0;
+        padding-top: 30px;
+    }
+    .footer-top-area{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ 
+   
+    .header-top-area, .text-right, .industrian-cta-area, .text-right, .single-slide-item, .padding-left-30{
+        text-align: center;
+    }
+    .mainmenu{
+        display: none;
+    }
+    .header-top-area{
+        font-size: 12px;
+    }
+    .single-small-service-item h4{
+        font-size: 16px;
+    }
+    .industrian-content-block{
+        padding: 35px 0;
+    }
+    .industrian-cta-area .cta-btn{
+        margin-top: 15px;
+    }
+    .who-we-are-text{
+        padding: 20px 0; 
+    }
+    .padding-left-30{
+        margin-top: 30px;
+    }
+    .footer-wid{
+        padding-bottom: 0;
+        padding-top: 30px;
+    }
+    .footer-top-area{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .logo{
+        text-align: left;
+    }
+    .responsive-menu-wrap{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        margin-top: -18px;
+    }
+    .mainmenu-area{
+        position: relative;
+        z-index: 9;
+    }
+    .responsive-menu-wrap .slicknav_menu{
+        background: none;
+        padding: 0;
+    }
+    .slicknav_btn{
+        margin: 0;
+    }
+    .single-slide-item h2{
+        font-size: 30px;
+    }
+    .single-slide-item{
+        font-size: 15px;
+        height: 400px;
+    }
+    .homepage-slides .owl-nav div{
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        color: #333;
+    }
+    .slicknav_nav{
+        width: 180px;
+        background: #333;
+        border-radius: 3px;
+    }
+    .homepage-slides .owl-nav{
+        text-align: center;
+        margin-top: 5px;
+    }
+    .homepage-slides .owl-nav div.owl-next,.homepage-slides .owl-nav div{
+        left: auto;
+        right: auto;
+        margin: 10px;
+    }
+    .single-service-item{
+        margin-bottom: 50px;
+    }
+
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}

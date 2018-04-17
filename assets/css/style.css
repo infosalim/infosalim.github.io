@@ -28,7 +28,9 @@ body{
     height: auto;
 }
 
-
+.section-grey{
+    background: #eee;
+}
 
 /************************************/
 
@@ -170,23 +172,78 @@ body{
 
 
 .salim-area {
-    padding: 100px 0;
-    box-shadow: 0  10px 15px 0 #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 100px;
 }
 
 .salim-area h2 {
     text-align:  center;
-    margin:  0;
-    padding: 10px 0;
-    margin-bottom: 20px;
+    padding: 50px 0;
 }
 
 /************************************/
+
+
+
+.salim-intro {
+    position: relative;
+    padding: 100px 0;
+    background: #ddd;
+    background-image: url(../image/intro-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.salim-intro:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+
+.intro-image{
+    text-align: right;
+    z-index: -1;
+}
+.intro-image img{
+    height: 320px;
+}
+.intro-detail {
+    color:  #fff;
+    padding: 100px 0 30px;
+    width: 70%;
+    z-index: -1;
+}
+
+.intro-detail h3 {
+    text-transform:  uppercase;
+    margin:  0;
+    padding: 10px 0;
+}
+
+.intro-detail p {
+    padding: 30px 0 20px;
+}
+
+
+
+
+
+
+
+
+/*************************************/
 
 .my-detail {
     box-shadow: 0 3px 15px 5px #ddd;
     height: 260px;
     padding: 10px 20px;
+    background: #fff;
 }
 
 .my-detail h3 {
@@ -200,15 +257,74 @@ body{
     line-height: 20px;
 }
 
-.learn-more {color: #000;font-weight: 400;}
+.learn-more {
+    color: #000;
+    font-weight: 400;
+}
 
 
 
 
+/***********************************************/
 
 
+.portfolio-gallery {
+    position: relative;
+    z-index: 1;
+}
 
+.portfolio-gallery img{
+    width:100%;
+}
 
+.portfolio-gallery h5 {
+    position:  absolute;
+    margin:  0;
+    padding: 5px;
+    top: 65%;
+    left: 50%;
+    margin-top: -10px;
+    border: 1px solid #74d8e5;
+    margin-left: -40px;
+    color: #fff;
+    text-align:  center;
+    transition:  ease-in .4s;
+    z-index: 2;
+    opacity:  0;
+    visibility: hidden;
+}
+
+.portfolio-gallery:after {
+    height: 100%;
+    width: 100%;
+    position:  absolute;
+    content:  "";
+    background: #3b1313;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in .3s;
+}
+
+/*********************************/
+
+.padding-0{
+    padding: 0;
+}
+
+/*********************************/
+
+.portfolio-gallery:hover h5{
+    visibility: visible;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+}
+.portfolio-gallery:hover::after{
+    visibility: visible;
+    opacity: .8;
+} 
 
 
 
