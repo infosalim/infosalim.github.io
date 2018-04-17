@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/************************************/
+
+.slide-bg-1{background-image: url(../image/slider-1.jpg);}
+.slide-bg-2{background-image: url(../image/slider-2.jpg);}
+.slide-bg-3{background-image: url(../image/slider-3.jpg);}
+.slide-bg-4{background-image: url(../image/slider-4.jpg);}
+
+
+
+
+
+
+/************************************/
+
+.salim-banner-area, .salim-slide-area,.salim-slide-area div{
+    height: 100vh;
+}
+.salim-banner-area div.slide-item-tablecell, .salim-banner-area div.slide-item-tablecell div{
+    height: auto;
+}
+
+
+
+/************************************/
+
+.single-slide-item {
+    position:  relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.single-slide-item:after {
+    position:  absolute;
+    left:  0;
+    top:  0;
+    width:  100%;
+    height:  100%;
+    background:  #3b1313;
+    content:  "";
+    z-index:  -1;
+    opacity: .8;
+}
+
+
+.slide-item-table {
+    display:  table;
+    width: 100%;
+    text-align:  center;
+}
+
+.slide-item-tablecell {
+    display:  table-cell;
+    vertical-align:  middle;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slide-item-tablecell h5{
+    margin: 0;
+    opacity: .8;
+}
+.slide-item-tablecell h1 {
+    margin: 10px 0 50px 0;
+    font-size: 50px;
+}
+.salim-learn-btn {
+    position:  relative;
+    color:  #fff;
+    background: #74d8e5;
+    font-size:  14px;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+/*
+.single-slide-item h1:after {
+    position:  absolute;
+    height:  2px;
+    width:  55px;
+    left:  50%;
+    content: "";
+    background: #fff;
+    bottom:  45%; 
+    margin-left: -25px;
+}
+
+
+*/
+
+
+
+/************************************/
+
+.header-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding-top: 10px;
+}
+
+.mainmenu {
+    font-size: 13px;
+    font-weight:  700;
+    text-transform:  uppercase;
+    text-align: right;
+}
+
+.mainmenu ul {
+    margin:  0;
+    padding: 0;
+    list-style:  none;
+}
+
+.mainmenu li {
+    display:  inline-block;
+    position:  relative;
+}
+
+.mainmenu li a {
+    display:  block;
+    color:  #fff;
+    padding: 15px;
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+/******** Carousel Fade*************/
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+/************************************/
+
+
+.salim-area {
+    padding: 100px 0;
+    box-shadow: 0  10px 15px 0 #ddd;
+}
+
+.salim-area h2 {
+    text-align:  center;
+    margin:  0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+/************************************/
+
+.my-detail {
+    box-shadow: 0 3px 15px 5px #ddd;
+    height: 260px;
+    padding: 10px 20px;
+}
+
+.my-detail h3 {
+    margin:  0;
+    padding:  10px 0;
+}
+
+.my-detail p {
+    margin: 0;
+    padding: 10px 0;
+    line-height: 20px;
+}
+
+.learn-more {color: #000;font-weight: 400;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
