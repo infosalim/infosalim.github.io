@@ -74,7 +74,7 @@ body{
     margin: 10px 0 50px 0;
     font-size: 50px;
 }
-.salim-learn-btn {
+.salim-learn-btn{
     position:  relative;
     color:  #fff;
     background: #74d8e5;
@@ -172,7 +172,6 @@ body{
 
 
 .salim-area {
-    border-bottom: 1px solid #ddd;
     padding: 0 0 100px;
 }
 
@@ -188,7 +187,6 @@ body{
 .salim-intro {
     position: relative;
     padding: 100px 0;
-    background: #ddd;
     background-image: url(../image/intro-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -326,18 +324,136 @@ body{
     opacity: .8;
 } 
 
+/*********************************/
+
+.contact-area{
+    position: relative;
+    background-image: url(../image/form-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.contact-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+.salim-form{
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+.salim-form:after{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .75;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+.contact-area h2{
+    color: #fff;
+}
+
+.quote-title {
+    background: #ffd85b;
+}
+
+.quote-title h4 {
+    color:  #fff;
+    padding:  15px 10px;
+    text-transform:  uppercase;
+}
+.salim-contact-form label {
+    display:  block;
+    color: #fff;
+    padding: 12px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.salim-contact-form input[type=text],
+.salim-contact-form input[type=email],
+.salim-contact-form input[type=tel],
+.salim-contact-form textarea{
+    border: 1px solid #000;
+    background-color: unset;
+    color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.salim-contact-form textarea{
+    height: 110px;
+}
+
+.salim-contact-form input[type=submit]{
+    border: 1px solid #00871f;
+    color:  #fff;
+    background:  #74d8e5;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    padding:  8px 25px;
+    font-weight: 700;
+    border-radius:  5px;
+}
+
+.other-contacts {
+    padding: 5px 30px;
+}
+
+.other-contacts h5 {
+    color:  #fff;
+    margin:  0;
+    font-size: 18px;
+}
+.other-contacts h6 {
+    color: #efefef;
+    font-size: 13px;
+}
+
+.social-contact .fa-facebook-square,
+.social-contact .fa-twitter-square,
+.social-contact .fa-linkedin,
+.social-contact .fa-envelope-square,
+.social-contact .fa-behance-square,
+.social-contact .fa-google-plus-square{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 10px;
+}
 
 
+/**************************************/
+.footer-area {
+    height: 200px;
+    background: #3b1313;
+}
 
+.footer-area h6 {
+    color: #fff;
+    top: 50%;
+    display:  flex;
+    padding: 20% 0;
+    letter-spacing:  1px;
+    font-weight:  400;
+    font-size: 16px;
+}
 
-
-
-
-
-
-
-
-
+.footer-area h6 a {
+    color:  #fff;
+    padding: 0 7px;
+}
 
 
 
