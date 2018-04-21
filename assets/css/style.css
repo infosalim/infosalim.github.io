@@ -7,7 +7,7 @@ body{
 }
 
 
-/************************************/
+/*************   Background Images ***********************/
 
 .slide-bg-1{background-image: url(../image/slider-1.jpg);}
 .slide-bg-2{background-image: url(../image/slider-2.jpg);}
@@ -15,7 +15,41 @@ body{
 .slide-bg-4{background-image: url(../image/slider-4.jpg);}
 
 
+/******************   Hover effects  ******************/
 
+.mainmenu li a:hover{
+    text-decoration: none;
+    color: #74d8e5;
+    transition: ease-in .2s;
+}
+.salim-learn-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in .2s;
+    background: #4ea6b2;
+}
+.learn-more:hover  {
+    text-decoration: none;
+    color: #4ea6b2;
+}
+.learn-more:hover .fa-long-arrow-alt-right{
+    margin-left: 10px;
+    transition: .2s;
+}
+.portfolio-gallery h5:hover{
+    border: 1px solid #74d8e5;
+    transition:  ease-in .2s;
+    color: #74d8e5;
+}
+.salim-contact-form input[type=submit]:hover{
+    background: #4ea6b2;
+    border-color: #4ea6b2;
+    transition: ease-in .2s;
+}
+
+.footer-area h6 a:hover{
+    color: #74d8e5;
+}
 
 
 
@@ -84,21 +118,6 @@ body{
     font-weight: 700;
 }
 
-
-/*
-.single-slide-item h1:after {
-    position:  absolute;
-    height:  2px;
-    width:  55px;
-    left:  50%;
-    content: "";
-    background: #fff;
-    bottom:  45%; 
-    margin-left: -25px;
-}
-
-
-*/
 
 
 
@@ -256,11 +275,76 @@ body{
 }
 
 .learn-more {
-    color: #000;
+    color: #74d8e5;
     font-weight: 400;
+}
+/***********************************************/ 
+
+.salim-skill-area{
+    position: relative;
+    background-image: url(../image/form-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.salim-skill-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+.salim-skill-area h2{
+    color: #fff;
 }
 
 
+
+
+
+.progress {
+  height: 30px;
+
+}
+.progress .skill {
+  font: normal 12px "Open Sans Web";
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+
+/* colors*/
+
+.progress-bar-html{
+    background: #2d7f33;
+}
+.progress-bar-css{
+    background: #5184ad;
+}
+.progress-bar-js{
+    background: #ffe228;
+}
+.progress-bar-jq{
+    background: #ff984f;
+}
+.progress-bar-ph{
+    background: #21a2ff;
+}
 
 
 /***********************************************/
@@ -282,11 +366,11 @@ body{
     top: 65%;
     left: 50%;
     margin-top: -10px;
-    border: 1px solid #74d8e5;
+    border: 1px solid #fff;
     margin-left: -40px;
     color: #fff;
     text-align:  center;
-    transition:  ease-in .4s;
+    transition:  .4s;
     z-index: 2;
     opacity:  0;
     visibility: hidden;
@@ -346,8 +430,7 @@ body{
 }
 .salim-form{
     position: relative;
-    z-index: 1;
-    padding: 10px;
+    z-index: 1;    
 }
 .salim-form:after{
     top: 0;
@@ -370,8 +453,14 @@ body{
 
 .quote-title h4 {
     color:  #fff;
-    padding:  15px 10px;
+    padding:  20px 10px;
     text-transform:  uppercase;
+}
+.salim-contact-form{
+    padding: 0 15px;
+}
+.salim-contact-form form {
+    padding: 10px 0;
 }
 .salim-contact-form label {
     display:  block;
@@ -390,7 +479,7 @@ body{
     color: #ddd;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 0;
 }
 .salim-contact-form textarea{
     height: 110px;
@@ -436,8 +525,8 @@ body{
 
 /**************************************/
 .footer-area {
-    height: 200px;
-    background: #3b1313;
+    height: 180px;
+    background: #070707;
 }
 
 .footer-area h6 {
