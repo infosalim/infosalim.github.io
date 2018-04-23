@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/*************   Background Images ***********************/
+
+.slide-bg-1{background-image: url(../image/slider-1.jpg);}
+.slide-bg-2{background-image: url(../image/slider-2.jpg);}
+.slide-bg-3{background-image: url(../image/slider-3.jpg);}
+.slide-bg-4{background-image: url(../image/slider-4.jpg);}
+
+
+/******************   Hover effects  ******************/
+
+.mainmenu li a:hover{
+    text-decoration: none;
+    color: #74d8e5;
+    transition: ease-in .2s;
+}
+.salim-learn-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in .2s;
+    background: #4ea6b2;
+}
+.learn-more:hover  {
+    text-decoration: none;
+    color: #4ea6b2;
+}
+.learn-more:hover .fa-long-arrow-alt-right{
+    margin-left: 10px;
+    transition: .2s;
+}
+.portfolio-gallery h5:hover{
+    border: 1px solid #74d8e5;
+    transition:  ease-in .2s;
+    color: #74d8e5;
+}
+.salim-contact-form input[type=submit]:hover{
+    background: #4ea6b2;
+    transition: ease-in .2s;
+}
+
+.footer-area h6 a:hover{
+    color: #74d8e5;
+}
+
+/*************** focus *********/
+
+.salim-contact-form input[type=text]:focus,
+.salim-contact-form input[type=email]:focus,
+.salim-contact-form input[type=tel]:focus,
+.salim-contact-form textarea:focus{
+    border: 1px solid #74d8e5;
+}
+/********************  active *************/
+
+.mainmenu li a:active, .salim-learn-btn:active, .learn-more:active,
+.learn-more:active, .portfolio-gallery h5:active, .salim-contact-form input[type=submit]:active, .footer-area h6 a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+/************************************/
+
+.salim-banner-area, .salim-slide-area,.salim-slide-area div{
+    height: 100vh;
+}
+.salim-banner-area div.slide-item-tablecell, .salim-banner-area div.slide-item-tablecell div{
+    height: auto;
+}
+
+.section-grey{
+    background: #eee;
+}
+
+/************************************/
+
+.single-slide-item {
+    position:  relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.single-slide-item:after {
+    position:  absolute;
+    left:  0;
+    top:  0;
+    width:  100%;
+    height:  100%;
+    background:  #3b1313;
+    content:  "";
+    z-index:  -1;
+    opacity: .8;
+}
+
+
+.slide-item-table {
+    display:  table;
+    width: 100%;
+    text-align:  center;
+}
+
+.slide-item-tablecell {
+    display:  table-cell;
+    vertical-align:  middle;
+    color: #fff;
+    text-transform: uppercase;
+}
+.slide-item-tablecell h5{
+    margin: 0;
+    opacity: .8;
+}
+.slide-item-tablecell h1 {
+    margin: 10px 0 50px 0;
+    font-size: 50px;
+}
+.salim-learn-btn{
+    position:  relative;
+    color:  #fff;
+    background: #74d8e5;
+    font-size:  14px;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+
+
+
+/************************************/
+
+.header-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding-top: 10px;
+}
+
+.mainmenu {
+    font-size: 13px;
+    font-weight:  700;
+    text-transform:  uppercase;
+    text-align: right;
+}
+
+.mainmenu ul {
+    margin:  0;
+    padding: 0;
+    list-style:  none;
+}
+
+.mainmenu li {
+    display:  inline-block;
+    position:  relative;
+}
+
+.mainmenu li a {
+    display:  block;
+    color:  #fff;
+    padding: 15px;
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+/******** Carousel Fade*************/
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+
+
+/************************************/
+
+
+.salim-area {
+    padding: 0 0 100px;
+}
+
+.salim-area h2 {
+    text-align:  center;
+    padding: 50px 0;
+}
+
+/************************************/
+
+
+
+.salim-intro {
+    position: relative;
+    padding: 100px 0;
+    background-image: url(../image/intro-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.salim-intro:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+
+.intro-image{
+    text-align: right;
+    z-index: -1;
+}
+.intro-image img{
+    height: 320px;
+}
+.intro-detail {
+    color:  #fff;
+    padding: 100px 0 30px;
+    width: 70%;
+    z-index: -1;
+}
+
+.intro-detail h3 {
+    text-transform:  uppercase;
+    margin:  0;
+    padding: 10px 0;
+}
+
+.intro-detail p {
+    padding: 30px 0 20px;
+}
+
+
+
+
+
+
+
+
+/*************************************/
+
+.my-detail {
+    box-shadow: 0 3px 15px 5px #ddd;
+    height: 260px;
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.my-detail h3 {
+    margin:  0;
+    padding:  10px 0;
+}
+
+.my-detail p {
+    margin: 0;
+    padding: 10px 0;
+    line-height: 20px;
+}
+
+.learn-more {
+    color: #74d8e5;
+    font-weight: 400;
+}
+/***********************************************/ 
+
+.salim-skill-area{
+    position: relative;
+    background-image: url(../image/form-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.salim-skill-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+.salim-skill-area h2{
+    color: #fff;
+}
+
+
+
+
+
+.progress {
+  height: 30px;
+
+}
+.progress .skill {
+  font: normal 12px "Open Sans Web";
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+
+/* colors*/
+
+.progress-bar-html{
+    background: #2d7f33;
+}
+.progress-bar-css{
+    background: #5184ad;
+}
+.progress-bar-js{
+    background: #ffe228;
+}
+.progress-bar-jq{
+    background: #ff984f;
+}
+.progress-bar-ph{
+    background: #21a2ff;
+}
+
+
+/***********************************************/
+
+
+.portfolio-gallery {
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-gallery img{
+    width:100%;
+}
+
+.portfolio-gallery h5 {
+    position:  absolute;
+    margin:  0;
+    padding: 5px;
+    top: 65%;
+    left: 50%;
+    margin-top: -10px;
+    border: 1px solid #fff;
+    margin-left: -40px;
+    color: #fff;
+    text-align:  center;
+    transition:  .4s;
+    z-index: 2;
+    opacity:  0;
+    visibility: hidden;
+}
+
+.portfolio-gallery:after {
+    height: 100%;
+    width: 100%;
+    position:  absolute;
+    content:  "";
+    background: #3b1313;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in .3s;
+}
+
+/*********************************/
+
+.padding-0{
+    padding: 0;
+}
+
+/*********************************/
+
+.portfolio-gallery:hover h5{
+    visibility: visible;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+}
+.portfolio-gallery:hover::after{
+    visibility: visible;
+    opacity: .8;
+} 
+
+/*********************************/
+
+.contact-area{
+    position: relative;
+    background-image: url(../image/form-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.contact-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+.salim-form{
+    position: relative;
+    z-index: 1;    
+}
+.salim-form:after{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .75;
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+.contact-area h2{
+    color: #fff;
+}
+
+.quote-title {
+    background: #ffd85b;
+}
+
+.quote-title h4 {
+    color:  #fff;
+    padding:  20px 10px;
+    text-transform:  uppercase;
+}
+.salim-contact-form{
+    padding: 0 15px;
+}
+.salim-contact-form form {
+    padding: 10px 0;
+}
+.salim-contact-form label {
+    display:  block;
+    color: #fff;
+    padding: 12px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.salim-contact-form input[type=text],
+.salim-contact-form input[type=email],
+.salim-contact-form input[type=tel],
+.salim-contact-form textarea{
+    border: 1px solid #000;
+    background-color: unset;
+    color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.salim-contact-form textarea{
+    height: 110px;
+}
+
+.salim-contact-form input[type=submit]{
+    border: none;
+    color:  #fff;
+    background:  #74d8e5;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    padding:  8px 25px;
+    font-weight: 700;
+    border-radius:  5px;
+}
+
+.other-contacts {
+    padding: 5px 30px;
+}
+
+.other-contacts h5 {
+    color:  #fff;
+    margin:  0;
+    font-size: 18px;
+}
+.other-contacts h6 {
+    color: #efefef;
+    font-size: 13px;
+}
+
+.social-contact .fa-facebook-square,
+.social-contact .fa-twitter-square,
+.social-contact .fa-linkedin,
+.social-contact .fa-envelope-square,
+.social-contact .fa-behance-square,
+.social-contact .fa-google-plus-square{
+    color: #fff;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+
+/**************************************/
+.footer-area {
+    height: 180px;
+    background: #070707;
+}
+
+.footer-area h6 {
+    color: #fff;
+    top: 50%;
+    display:  flex;
+    padding: 20% 0;
+    letter-spacing:  1px;
+    font-weight:  400;
+    font-size: 16px;
+}
+
+.footer-area h6 a {
+    color:  #fff;
+    padding: 0 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
