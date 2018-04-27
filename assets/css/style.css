@@ -56,7 +56,9 @@ body{
 .salim-contact-form input[type=email]:focus,
 .salim-contact-form input[type=tel]:focus,
 .salim-contact-form textarea:focus{
-    border: 1px solid #74d8e5;
+    background: #000;
+    box-sizing: border-box;
+    border-color: #000;
 }
 /********************  active *************/
 
@@ -219,9 +221,8 @@ body{
 .salim-intro {
     position: relative;
     padding: 100px 0;
-    background-image: url(../image/intro-bg.jpg);
+    background: url(../image/intro-bg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     z-index: 1;
@@ -297,8 +298,9 @@ body{
 
 .salim-skill-area{
     position: relative;
-    background-image: url(../image/form-bg.jpg);
+    background-image: url(../image/skill-bg.jpg);
     background-size: cover;
+    background-position: center bottom;
     background-attachment: fixed;
     z-index: 1;
 }
@@ -429,6 +431,7 @@ body{
     position: relative;
     background-image: url(../image/form-bg.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     z-index: 1;
 }
