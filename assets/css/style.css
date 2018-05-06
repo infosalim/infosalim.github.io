@@ -518,7 +518,7 @@ body{
     color: #ddd;
     width: 100%;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 10px;
 }
 .salim-contact-form textarea{
     height: 110px;
