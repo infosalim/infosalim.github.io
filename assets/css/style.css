@@ -522,6 +522,7 @@ body{
 }
 .salim-contact-form textarea{
     height: 110px;
+    resize: none;
 }
 
 .salim-contact-form input[type=submit]{
