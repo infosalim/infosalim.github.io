@@ -40,6 +40,10 @@ $(document).ready(function() {
         });
     });
 
+
+    // wow js activation
+
+
 });
 
 /**********
